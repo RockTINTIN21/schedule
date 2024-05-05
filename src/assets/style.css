@@ -1,0 +1,44 @@
+body{
+    background-color: #F4F7FE;
+    margin: 0;
+    padding: 0;
+}
+
+.block{
+    border-radius: 1rem;
+}
+.timetable {
+    display: grid;
+    grid-template-columns: 120px repeat(6, 1fr);
+    gap: 10px;
+}
+.time_header, .day_header, .time_slot, .time_slot_result {
+    padding: 8px;
+    border-radius: 10px;
+    background: #e9ecef;
+    text-align: center;
+}
+
+.time_header {
+    grid-column: 1 / 2;
+}
+
+.day_header {
+    grid-column: span 1;
+    background: #F4F7FE;
+    font-weight: bold;
+}
+
+.time_slot {
+    background: #e9ecef;
+    grid-column: 1;
+}
+
+.time_slot_result {
+    background: #F4F7FE;
+}
+.time_slot_result:hover {
+    color: white;
+    background-color: #2B3674;
+    transition: 0.3s;
+}
